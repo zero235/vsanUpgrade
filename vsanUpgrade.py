@@ -185,7 +185,7 @@ def main():
          upgradeSpec = vim.VsanDiskFormatConversionSpec(
             dataEfficiencyConfig = vim.VsanDataEfficiencyConfig(
                compressionEnabled = args.enabledc,
-               deduplicationEnabled = args.enabledc
+               dedupEnabled = args.enabledc
             )
          )
 
