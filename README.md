@@ -13,10 +13,10 @@ Preconditions:
 3. The Virtual SAN On-Disk Format has NOT been converted from Version 2.0 to Version 3.
 
 Case1: Upgrade from On-Disk Format Version 2 to Version 3 
-python vsanDeploy.py -s <VCENTERSERVER> -u user -p password --cluster <CLUSTER> --reduceredundancy 
+python vsanDeploy.py -s <VCENTERSERVER> -u user -p password --cluster CLUSTER --reduceredundancy 
 
 Case2: Upgrade from On-Disk Format Version 2 to Version 3 with reduced redundancy 
-python vsanDeploy.py -s <VCENTERSERVER> -u user -p password --cluster <CLUSTER> --reduceredundancy 
+python vsanDeploy.py -s <VCENTERSERVER> -u user -p password --cluster CLUSTER --reduceredundancy 
 
 Case3: Upgrade from On-Disk Format Version 2 to Version 3 and enable Deduplication and Compression 
-python vsanDeploy.py -s <VCENTERSERVER> -u user -p password --cluster <CLUSTER> --enabledc
+python vsanDeploy.py -s <VCENTERSERVER> -u user -p password --cluster CLUSTER --enabledc
