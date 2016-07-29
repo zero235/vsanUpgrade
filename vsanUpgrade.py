@@ -198,7 +198,7 @@ def main():
 
          #If you change the dataEfficiency property, then you should call VSanClusterReconfig, which will upgrade disk version
          #automatically
-         if args.enablededup != vsanConfig.dataEfficiencyConfig.dedupEnabled:
+         if args.enabledc != vsanConfig.dataEfficiencyConfig.dedupEnabled:
             upgradeSpec = vim.VimVsanReconfigSpec(
                modify = True,
                dataEfficiencyConfig = upgradeSpec.dataEfficiencyConfig
